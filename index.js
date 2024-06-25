@@ -1,8 +1,9 @@
 const express = require("express");
-const db = require("../BACKEND-APP/dbConfig.js")
+const db = require("./dbConfig")
 const cors = require("cors");
 const mysql = require("mysql");
-const routes = require('../BACKEND-APP/routes.js');
+const routes = require('./routes');
+
 const app=express();
     app.use(cors());
     app.use(routes);
